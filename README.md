@@ -57,7 +57,7 @@
         }
         else{
             cout << "恭喜" << endl;
-            break;   // ✅ 關鍵：猜對就結束
+            break;   
         }
     }
 

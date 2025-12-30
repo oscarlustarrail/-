@@ -34,28 +34,38 @@
 | 第10週 | 猜數字遊戲 | 綜合應用 |
 
 ### 學習成果展示
-
 #include <iostream>
 using namespace std;
+
 int main(){
-	int a = 234;
-	int b;
-	cout <<"猜數字，1~1000"<<endl; 
-	while(true){
-		cin >> b;
-		if(b>1000||b<1){
-			cout << "輸入1~1000"<< endl;
-			continue;
-		} 
-	if(b>a){
-		cout << "太大"<< endl;
-	}else if(b<a){
-		cout << "太小"<< endl;
-	} else{
-		cout << "恭喜"<< endl;
-	}
+    int a = 234;
+    int b;
+
+    cout << "猜數字，1~1000" << endl;
+
+    while(true){
+        cin >> b;
+
+        if(b > 1000 || b < 1){
+            cout << "輸入1~1000" << endl;
+            continue;
+        }
+
+        if(b > a){
+            cout << "太大" << endl;
+        }
+        else if(b < a){
+            cout << "太小" << endl;
+        }
+        else{
+            cout << "恭喜" << endl;
+            break;   // ✅ 關鍵：猜對就結束
+        }
+    }
+
+    return 0;
 }
-}
+
 
 ### 成果介紹
 

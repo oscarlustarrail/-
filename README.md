@@ -34,13 +34,11 @@
 | 第10週 | 猜數字遊戲 | 綜合應用 |
 
 ### 學習成果展示
-#include <iostream>
-using namespace std;
-
-int main(){
-    int a = 234;
+    #include <iostream>
+    using namespace std;
+    int main(){ 
+    int a =234;
     int b;
-
     cout << "猜數字，1~1000" << endl;
 
     while(true){
@@ -64,7 +62,8 @@ int main(){
     }
 
     return 0;
-}
+    }
+
 
 
 ### 成果介紹
